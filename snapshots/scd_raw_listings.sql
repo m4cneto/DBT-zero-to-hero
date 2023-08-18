@@ -1,4 +1,4 @@
-{ % snapshot scd_raw_listings % } 
+{% snapshot scd_raw_listings %} 
 
 {{ 
     config(
@@ -12,4 +12,4 @@
 
 select * FROM {{ source('airbnb', 'listings') }} 
 
-{ % endsnapshot % }
+{% endsnapshot %}
